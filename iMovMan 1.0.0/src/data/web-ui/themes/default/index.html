@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+<!--Just reseting everything-->
+<style>
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin: 0;
+    margin-bottom: 0px;
+	padding: 0;
+	border: 0;
+}
+
+div#imovman_body
+{
+width:99.9%;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+
+<script type="text/javascript" src="/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/jquery/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="/jquery/jquery.lazyload.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/aristo/aristo.css" />
+
+
+<script src="/src/jquery.ui.position.js" type="text/javascript"></script>
+<script src="/src/jquery.contextMenu.js" type="text/javascript"></script>
+<link href="/src/jquery.contextMenu.css" rel="stylesheet" type="text/css" />
+
+
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+<title>iMovMan</title>
+
+
+<!--User interface definition zone-->
+<script type="text/javascript" src="/isrc/imovman-js.js"></script>
+<link rel="stylesheet" type="text/css" href="/isrc/imovman-css.css" />
+ 
+<!--User interface ends-->
+</head>
+<body>
+
+
+<div id="imovman_body">
+
+
+
+<div id="header_container" class="header_container">
+<table>
+<tr>
+<td class="align-me-left">
+<div id="search_container">
+<div class="ui-widget">
+<table>
+<tr>
+<td>
+<input id="search_box" class="search_box ajax_loader" type="text" value="">
+</input>
+</td>
+<td>&nbsp;</td>
+<td>
+<div id="ogen">
+
+
+</div>
+
+
+	
+</td>
+
+
+
+
+</tr></table>
+</div>
+</div>
+</td>
+
+
+<td class="align-me-right">
+
+<div id="header_buttons">
+
+
+
+
+<button id="btn_year" onclick='sort_by_year();' title="Sort By Year">
+		<img width="25px" height="25px" src="/img/year.png"/>
+		</button>
+			
+<button id="btn_rating" onclick='sort_by_rating();' title="Sort By Rating">
+	<img width="25px" height="25px" src="/img/rating.png"/>
+	</button>
+	
+<button id="btn_all" onclick='load_movies("all");' title="All Movies">
+<img width="25px" height="25px" src="/img/all.png"/>
+</button>
+
+<button id="btn_watched" onclick='watched_movies();' title="Watched Movies">
+<img width="25px" height="25px" src="/img/watched.png"/>
+</button>
+
+<button id="btn_notwatched" onclick='notwatched_movies();' title="Not Watched Movies">
+<img width="25px" height="25px" src="/img/notwatched.png"/>
+</button>
+
+<button id="btn_want_to_watch" onclick='wanttowatch_movies();' title="Want To Watch">
+<img width="25px" height="25px" src="/img/wanttowatch.png"/>
+</button>
+
+<button id="btn_stats" onclick='window_statistics();' title="Statistics">
+<img width="25px" height="25px" src="/img/stats.png"/>
+</button>
+
+<button id="btn_refresh" onclick='refresh_drives();' title="Refresh Drives">
+<img width="25px" height="25px" src="/img/refresh.png"/>
+</button>
+
+
+
+
+
+
+
+</div>
+</td>
+
+
+</tr>
+</table>
+
+
+
+
+
+
+
+
+</div><!--Contains header elemnts-->
+
+
+<div id="up_container">
+
+</div><!--Contains up elemnts-->
+
+
+<div id="movie_container">
+<!--
+<div id="sidebar_container"><div id="movie_sidebar"></div></div>
+-->
+<div id="movie_content"></div>
+
+</div>
+
+
+
+<div id="down_container"></div><!--Contains down elements-->
+
+
+<div id="footer_container">
+</div><!--Contains fotter elements-->
+
+
+</div><!-- imovman-body end -->
+<div id="imovman_widget"></div>
+<div id="data-div"></div>
+</body>
+</html>
+
+

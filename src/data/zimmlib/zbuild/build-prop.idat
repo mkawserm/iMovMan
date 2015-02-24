@@ -1,0 +1,5 @@
+BuildName: RalpH
+BuildType: Stable
+BuildString: 20:1:2014-0:28:1
+BuildNumber: 16
+ChangeLog: <br/>&nbsp;&nbsp;&nbsp;&nbsp;Build 5: Updater Added<br/>&nbsp;&nbsp;&nbsp;&nbsp;Build 6,7,8: Updater Bug Fixed<br/>&nbsp;&nbsp;&nbsp;&nbsp;Build 9: Search Bar Redesigned<br/>&nbsp;&nbsp;&nbsp;&nbsp;Build 10: Unwatched Added<br/>&nbsp;&nbsp;&nbsp;&nbsp;Build 13: Movie's Number alongside with tags,genres and year<br/>&nbsp;&nbsp;&nbsp;&nbsp;Build 15: Unwatched Counter Bug Fixed<br/>&nbsp;&nbsp;&nbsp;&nbsp;Build 16: All movies counter added<br/>
